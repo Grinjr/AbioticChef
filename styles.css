@@ -9,6 +9,11 @@ h1 {
     text-align: center;
 }
 
+h5 {
+    color: #5336c6; /* More blue in the blurple */
+    text-align: center;
+}
+
 a {
 	color: #8f00ff;
 	text-decoration:none;
