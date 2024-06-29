@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abiotic Food Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Abiotic Food Calculator</h1>
+    <div id="options">
+        <label><input type="checkbox" id="canMakeSoup" checked> Can Make Soup</label>
+        <label><input type="checkbox" id="havePot" checked> Have Pot</label>
+        <label><input type="checkbox" id="havePan" checked> Have Pan</label>
+        <label><input type="checkbox" id="haveOven"  > Have Oven</label>
+    </div>
+    <div id="ingredients"></div>
+    <button id="filter-toggle">Toggle Filters</button>
+    <div id="filter-options" class="dropdown">
+        <div class="filter-section">
+            <label for="min-hunger">Min Hunger:</label>
+            <input type="number" id="min-hunger" min="0" step="1">
+            <label for="min-thirst">Min Thirst:</label>
+            <input type="number" id="min-thirst" min="0" step="1">
+            <label for="max-rads">Max Radiation:</label>
+            <input type="number" id="max-rads" min="0" step="1">
+        </div>
+        <div class="filter-section">
+            <div id="effect-filters">
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="lightfooted"><a href="https://abioticfactor.wiki.gg/wiki/Lightfooted" target="_blank"> Lightfooted<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="souperSatisfied">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Souper_Satisfied" target="_blank"> Souper Satisfied<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="heightenedSenses">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Heightened_Senses" target="_blank"> Heightened Senses<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="quickReflexes">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Quick_Reflexes" target="_blank"> Quick Reflexes<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="death">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Death" target="_blank"> Death<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="brainDrain">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Brain_Drain" target="_blank"> Brain Drain<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="sugarHigh">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Sugar_High" target="_blank"> Sugar High<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="sweetTooth">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Sweet_Tooth" target="_blank"> Sweet Tooth<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="livingOffTheLand">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Living_Off_the_Land" target="_blank"> Living Off the Land<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="bodacious">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Bodacious" target="_blank"> Bodacious<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="megaAnte">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Mega-Ante" target="_blank"> Mega-Ante<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="bigBrain">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Big_Brain" target="_blank"> Big Brain<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="temptationOfTheFlesh">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Temptation_of_the_Flesh" target="_blank"> Temptation of the Flesh<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="desireOfTheFlesh">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Desire_of_the_Flesh" target="_blank"> Desire of the Flesh<img src="external-link.png" alt="External link"></a>
+                </div>
+                <div class="effect-checkbox">
+                    <input type="checkbox" id="caffeinated">
+                    <a href="https://abioticfactor.wiki.gg/wiki/Caffeinated" target="_blank"> Caffeinated<img src="external-link.png" alt="External link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table id="recipes">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Ingredients</th>
+                <th>Portions</th>
+                <th>Hunger</th>
+                <th>Thirst</th>
+                <th width="8">Radiation</th>
+                <th>Effect</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="scripts.js"></script>
+</body>
+</html>
